@@ -1,0 +1,1 @@
+module.exports = require('@chakra-ui/prettier-config');
