@@ -1,4 +1,6 @@
 import { Flex, Box, Heading, Tabs, TabList, Tab } from "@chakra-ui/react"
+import { Link } from 'react-router-dom'
+
 
 const Header: React.FC = () => {
 
@@ -10,9 +12,9 @@ const Header: React.FC = () => {
         </Box>
         <Tabs colorScheme="green">
           <TabList>
-            <Tab>Play THIS</Tab>
-            <Tab>About THIS</Tab>
-            <Tab>Contact</Tab>
+            <Tab as={Link} to="/" _focus={{ boxShadow: 'none' }} _active={{ boxShadow: 'none' }}>HOME</Tab>
+            <Tab as={Link} to="/About" _focus={{ boxShadow: 'none' }} _active={{ boxShadow: 'none' }}>About THIS</Tab>
+            <Tab as={Link} to="/Contact" _focus={{ boxShadow: 'none' }} _active={{ boxShadow: 'none' }}>Contact</Tab>
           </TabList>
         </Tabs>
       </Flex>
