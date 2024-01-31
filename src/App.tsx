@@ -1,12 +1,18 @@
-import { useState } from 'react'
+// import { useState } from 'react'
+
+import Header from './components/Header'
+import AppRoutes from './Routes'
+
+
 
 import './App.css'
 
-function App() {
+const App: React.FC = () => {
 
   return (
     <>
-      
+      <Header />
+      <AppRoutes />
     </>
   )
 }
