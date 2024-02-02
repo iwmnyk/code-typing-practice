@@ -13,6 +13,7 @@
     "deploy": "tsc && vite build && gh-pages -d docs -b gh-pages",
     "eject": "react-scripts eject",
     "postbuild": "cp build/index.html build/404.html"
+
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
