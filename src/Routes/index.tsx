@@ -1,10 +1,12 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 
-import Home from '../components/Home';
-import Training from '../components/Training';
-import About from '../components/About';
-import Contact from '../components/Contact';
+import Home from '../components/Home'
+import Training from '../components/Training'
+import About from '../components/About'
+import Contact from '../components/Contact'
+import Error from '../components/Error'
+
 
 const AppRoutes: React.FC = () => {
   return (
@@ -13,6 +15,8 @@ const AppRoutes: React.FC = () => {
       <Route path="/training" element={<Training />} />
       <Route path="/About" element={<About />} />
       <Route path="/Contact" element={<Contact />} />
+      <Route path="*" element={<Error />} />
+
     </Routes>
   );
 };
