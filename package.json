@@ -10,7 +10,7 @@
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "preview": "vite preview",
     "format": "prettier --write src",
-    "deploy": "tsc && vite build && gh-pages -d docs -b gh-pages",
+    "deploy": "npm run build && gh-pages -d docs",
     "eject": "react-scripts eject"
   },
   "dependencies": {
