@@ -1,6 +1,6 @@
 import { Flex, Text, Box, Heading, Input, Textarea, Button } from "@chakra-ui/react"
 
-const Home: React.FC = () => {
+const Contact: React.FC = () => {
 
   return (
     <main>
@@ -30,4 +30,4 @@ const Home: React.FC = () => {
   )
 }
 
-export default Home
+export default Contact

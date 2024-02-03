@@ -1,6 +1,6 @@
 import { Flex, Text, Heading } from "@chakra-ui/react"
 
-const Home: React.FC = () => {
+const About: React.FC = () => {
 
   return (
     <main>
@@ -29,4 +29,4 @@ const Home: React.FC = () => {
   )
 }
 
-export default Home
+export default About
