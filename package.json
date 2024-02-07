@@ -1,6 +1,6 @@
 {
   "name": "code-typing-plactice",
-  "homepage": "https://iwmnyk.github.io/code-typing-practice/",
+  "homepage": "https://iwmnyk.github.io/code-typing-practice",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,9 +10,8 @@
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "preview": "vite preview",
     "format": "prettier --write src",
-    "deploy": "tsc && vite build && gh-pages -d docs -b gh-pages",
+    "deploy": "npm run build && gh-pages -d docs",
     "eject": "react-scripts eject"
-
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",

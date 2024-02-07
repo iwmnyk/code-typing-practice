@@ -1,6 +1,6 @@
 import { Flex, Heading } from "@chakra-ui/react"
 
-const Home: React.FC = () => {
+const Error: React.FC = () => {
 
   return (
     <main>
@@ -14,4 +14,4 @@ const Home: React.FC = () => {
   )
 }
 
-export default Home
+export default Error
