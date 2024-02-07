@@ -22,3 +22,5 @@ const javascript_beginner: string[] = [
     '<array>.filter((<x, index?>) => { <callback function> })',
     '<array>.reduce((<acc, curr, index?>) => { <callback function> }, <initialValue>)'
 ]
+
+export default javascript_beginner

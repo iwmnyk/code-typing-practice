@@ -54,3 +54,5 @@ const html5_selectors: string[] = [
     'figure figcaption img',
     'link'
 ]
+
+export default html5_selectors

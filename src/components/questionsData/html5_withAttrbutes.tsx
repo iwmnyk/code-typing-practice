@@ -15,3 +15,5 @@ const html5_withAttrbutes: string[] = [
     'meta charset="" name="" content=""',
     'link rel="" href="" type=""',
 ]
+
+export default html5_withAttrbutes
