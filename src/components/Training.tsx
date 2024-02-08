@@ -1,7 +1,7 @@
 import { Flex, Text, Input } from "@chakra-ui/react"
 
 import { useEffect, useRef } from "react"
-import Question from "./question";
+import Question from "./Question";
 
 
 const Training: React.FC = () => {
