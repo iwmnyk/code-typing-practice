@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 
 
-const FetchQuestions: React.FC = () => {
+export const FetchQuestions: React.FC = () => {
 
     const [questions, setQustions] = useState<string[]>([])
     const userSelected: string = 'javascript_beginner'
@@ -24,4 +24,3 @@ const FetchQuestions: React.FC = () => {
       
 }
 
-export default FetchQuestions
