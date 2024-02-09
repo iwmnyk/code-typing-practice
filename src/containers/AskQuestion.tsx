@@ -1,13 +1,20 @@
-import { FetchQuestions } from './Fetchquestions'
+import { useState } from 'react'
+import { useFetchQuestions } from './Fetchquestions'
 import { Question } from '../components/Question'
 
 export const AskQuestion: React.FC = () => {
+    
+    const questionsList = useFetchQuestions()
+    const [currentIndex, setCurrentIndex] = useState<number>(1)
 
-    const QuestionsList = FetchQuestions
+    const handleCorrect = () => {
+        setCurrentIndex(currentIndex + 1)
+    }
 
-    QuestionsList.map((m, i) => {
-        <Question ></Question>
+    const currentQuestion = questionsList[currentIndex]
 
-    })
+    return (
+        <Question count={currentIndex} question={currentQuestion} 　></Question>
+    )
 
 }

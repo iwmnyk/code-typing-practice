@@ -1,7 +1,7 @@
 import { Flex, Text, Input } from "@chakra-ui/react"
 
 import { useEffect, useRef } from "react"
-import Question from "./Question";
+import { AskQuestion } from "../containers/AskQuestion";
 
 
 const Training: React.FC = () => {
@@ -19,7 +19,7 @@ const Training: React.FC = () => {
     <main>
       <Flex direction={"column"} justifyContent={"center"}>
 
-        <Question />
+        <AskQuestion />
 
         <Input 
             maxW={600} 
