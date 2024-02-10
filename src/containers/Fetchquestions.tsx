@@ -10,7 +10,7 @@ export const useFetchQuestions = () => {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const module = await import(`../components/questionsData/${userSelected}`);
+          const module = await import(`../components/questionsData/${userSelected}.tsx`);
           const allQuetions = module.default
           const shuffled = allQuetions.slice().sort(()=> Math.random() -0.5 )
           setQustions(shuffled.slice(0, limit))
