@@ -12,9 +12,9 @@ const AppRoutes: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/training" element={<Training />} />
-      <Route path="/About" element={<About />} />
-      <Route path="/Contact" element={<Contact />} />
+      <Route path="/training/:selectedValue" element={<Training />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<Error />} />
 
     </Routes>

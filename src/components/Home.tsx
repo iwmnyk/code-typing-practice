@@ -1,7 +1,15 @@
+import { useState } from 'react'
 import { Flex, Text, Heading, Select, Button } from "@chakra-ui/react"
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Home: React.FC = () => {
+
+  const [selectedValue, setSelectedValue] = useState('javascript_beginner');
+  const navigate = useNavigate()
+
+  const handleStartTraining = () => {
+    navigate(`/training/${selectedValue}`)
+  }
 
   return (
     <main>
@@ -13,15 +21,16 @@ const Home: React.FC = () => {
 
         <Text>Select your favorite language for programming.</Text>
 
-        <Select maxW={300} mx={"auto"} my={10} focusBorderColor={"green"}>
-            <option value="javascript">javascript</option>
-            <option value="HTML5 + CSS3">HTML5 + CSS3</option>
-            <option value="php">php</option>
+        <Select maxW={300} mx={"auto"} my={10} focusBorderColor={"green"} value={selectedValue} onChange={(e)=>{setSelectedValue(e.target.value)} }>
+            <option value="javascript_beginner">javascript -初心者向け-</option>
+            <option value="html5_selectors">HTML5 -要素-</option>
+            <option value="html5_withAttrbutes">HTML5 -属性-</option>
+            {/* <option value="php">php</option>
             <option value="python">python</option>
-            <option value="Ruby + Ruby on Rails">Ruby + Ruby on Rails</option>
+            <option value="Ruby + Ruby on Rails">Ruby + Ruby on Rails</option> */}
         </Select>
 
-        <Button as={Link} to="/training" minW={300} mx={"auto"} letterSpacing={3} colorScheme="green" mb={10}>START!</Button>
+        <Button onClick={handleStartTraining} minW={300} mx={"auto"} letterSpacing={3} colorScheme="green" mb={10}>START!</Button>
 
         <Text color={"#9e9e9e"}>Playing for PC ONLY.</Text>
 

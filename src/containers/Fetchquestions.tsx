@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react"
 
 
-export const useFetchQuestions = () => {
+export const useFetchQuestions = (selectedValue: string) => {
 
     const [questions, setQustions] = useState<string[]>([])
-    const userSelected: string = 'javascript_beginner'
+    const userSelected: string = selectedValue
     const limit = 10
 
     useEffect(() => {
@@ -19,7 +19,7 @@ export const useFetchQuestions = () => {
         }
       }
       fetchData()
-      }, [])
+      }, [selectedValue])
     
     return questions
       
