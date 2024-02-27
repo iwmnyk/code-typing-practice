@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react"
 import { Input } from "@chakra-ui/react"
 
 interface UserInputProps {
-    handleCorrect: () => void 
+    handleCorrect: (e: React.ChangeEvent<HTMLInputElement>) => void 
 }
 
 export const UserInput:React.FC<UserInputProps> = ({handleCorrect}) => {
@@ -18,7 +18,8 @@ export const UserInput:React.FC<UserInputProps> = ({handleCorrect}) => {
 
     return (
         
-        <Input onKeyUp={handleCorrect}
+        <Input 
+            onChange={handleCorrect}
             maxW={600} 
             mx={"auto"} 
             my={16} 
