@@ -10,6 +10,8 @@ export const AskQuestion: React.FC = () => {
     const questionsList = useFetchQuestions(selectedValue);
     const [currentIndex, setCurrentIndex] = useState<number>(1);
 
+
+
     const handleCorrect = (e: React.ChangeEvent<HTMLInputElement>) => {
         if(e.currentTarget.value === questionsList[currentIndex]){
             setCurrentIndex(currentIndex + 1);

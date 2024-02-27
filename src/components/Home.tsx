@@ -17,7 +17,7 @@ const Home: React.FC = () => {
 
         <Heading as="h1" fontSize={64} pt={40} pb={10} fontWeight={"normal"}>CODE TYPING practice|</Heading>
 
-        <Heading as="h2" fontSize={36} pb={20} fontWeight={"normal"}>for programming beginners|</Heading>
+        <Heading as="h2" fontSize={36} pb={20} fontWeight={"normal"} color={"#9e9e9e"}>for programming beginners|</Heading>
 
         <Text>Select your favorite language for programming.</Text>
 
