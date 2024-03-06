@@ -12,7 +12,7 @@ const Result: React.FC = () => {
         <Heading as="h2" fontSize={36} pb={10} fontWeight={"normal"} color={"#9e9e9e"}>Score for your Challenge|</Heading>
         <Text fontSize={30} fontWeight={700}>00:01</Text>
 
-        <Button as={ReactRouterLink} to="/" mt={16} minW={300} mx={"auto"} letterSpacing={3} colorScheme="green" mb={10}>PLAY AGAIN</Button>
+        <Button as={ReactRouterLink} to="/" mt={16} minW={300} mx={"auto"} letterSpacing={3} colorScheme="green" mb={10}>Back to Home</Button>
       </Flex>
     </main>
   )

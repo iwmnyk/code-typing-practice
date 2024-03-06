@@ -5,7 +5,6 @@ import Home from '../components/Home'
 import Training from '../components/Training'
 import About from '../components/About'
 import Contact from '../components/Contact'
-import Result from '../components/Result'
 import Error from '../components/Error'
 
 
@@ -16,7 +15,6 @@ const AppRoutes: React.FC = () => {
       <Route path="/training/:selectedValue" element={<Training />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/result" element={<Result />} />
       <Route path="*" element={<Error />} />
 
     </Routes>
