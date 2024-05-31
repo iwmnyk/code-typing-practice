@@ -1,5 +1,6 @@
-import { Flex, Text } from "@chakra-ui/react"
+import { Flex } from "@chakra-ui/react"
 import { AskQuestion } from "../containers/AskQuestion";
+import { Timer } from "../containers/Timer";
 
 
 const Training: React.FC = () => {
@@ -9,8 +10,8 @@ const Training: React.FC = () => {
       <Flex direction={"column"} justifyContent={"center"}>
 
         <AskQuestion />
-       
-        <Text>00:01</Text>
+        <Timer />
+        
       </Flex>
     </main>
   )
