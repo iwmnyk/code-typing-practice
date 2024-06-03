@@ -5,8 +5,7 @@ interface TimerProps {
   isActive: boolean;
 }
 
-
-export const Timer: React.FC<TimerProps> = ({isActive}) => {
+export const Timer: React.FC<TimerProps> = ({ isActive }) => {
 
     const [seconds, setSeconds] = useState<number>(0);
 

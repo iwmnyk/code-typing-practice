@@ -16,11 +16,11 @@ export const AskQuestion: React.FC = () => {
 
     const handleCorrect = (e: React.ChangeEvent<HTMLInputElement>) => {
         if(e.currentTarget.value === questionsList[currentIndex]){
-            if(currentIndex < 10) {
+            if(currentIndex < 9) {
                 setCurrentIndex(currentIndex + 1);
                 e.currentTarget.value = "";
             } else {
-                setIsActive(false);
+                setIsActive(false); 
             }
         }
     }
